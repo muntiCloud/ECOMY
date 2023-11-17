@@ -11,11 +11,11 @@ import styles from '../../../assets/styles/components/products/Overview.module.c
 function ProductSidebar(){
 
     const products = [
-        { image: shoes1, name: 'Elegant Low Heel', popularity: 'demand', price: '$600' },
-        { image: shoes2, name: 'Strappy High Heel', popularity: 'demand', price: '$3000' },
-        { image: shoes3, name: 'Occasion Clutch Heels', popularity: 'demand', price: '$400' },
-        { image: shoes4, name: 'Carpet Spotlight Pumps', popularity: 'demand', price: '$500' },
-        { image: shoes5, name: 'Timeless Classic Heels', popularity: '', price: 'demand', price: '$750' },
+        { image: shoes1, name: 'Elegant Low Heel', popularity: 'shoes', price: '$600' },
+        { image: shoes2, name: 'Strappy High Heel', popularity: 'shoes', price: '$3000' },
+        { image: shoes3, name: 'Occasion Clutch Heels', popularity: 'shoes', price: '$400' },
+        { image: shoes4, name: 'Carpet Spotlight Pumps', popularity: 'shoes', price: '$500' },
+        { image: shoes5, name: 'Timeless Classic Heels', popularity: '', price: 'shoes', price: '$750' },
     ]
 
 return(

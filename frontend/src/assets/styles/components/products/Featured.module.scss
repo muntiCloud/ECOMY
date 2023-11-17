@@ -33,7 +33,6 @@
   .FeaturedProductContent {
     padding: 10px;
     height:150px;
-    // background-color: #fff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
@@ -65,17 +64,18 @@
     width: 40px;
   }
 
+
   .ProductWishlist,
   .ProductCart {
-    background-color: #fff;
-    color: #e74c3c;
+     color: black;
     padding: 5px;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #e74c3c;
-      color: #fff;
+      background-color:purple;
+      color:white;
+      padding:7px;
     }
   }

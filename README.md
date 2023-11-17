@@ -1,6 +1,6 @@
-# EcomY E-commerce Web Application
+# EcomY Web Application
 
-Welcome to our E-Commerce Web Application! This project is built with React and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to our E-Commerce Web Application!
 
 ![Application Design](./frontend/src/assets/images/brand/ecomy.png)
 ![Application Design](./frontend/src/assets/images/brand/ecomymobile.png)
@@ -74,6 +74,10 @@ Feel free to customize the application to suit your needs. If you're ready to ta
     ```bash
     npm run eject
     ```
+
+## Resources
+(https://github.com/facebook/create-react-app).
+
 
 **Note:** Ejecting is a one-way operation.
 

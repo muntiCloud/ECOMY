@@ -16,22 +16,27 @@ import seasonalthirdsecondview from '../../../assets/images/products/seasonal/se
 import seasonalfourthfirstview from '../../../assets/images/products/seasonal/seasonalfourthfirstview.png';
 import seasonalforthsecondview from '../../../assets/images/products/seasonal/seasonalfourthsecondview.png';
 import styles from '../../../assets/styles/components/products/Overview.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 function ProductMain() {
   const [hoveredProducts, setHoveredProducts] = useState({});
+  const [hoveredCard, setHoveredCard] = useState(null);
+
+
 
   const products = {
     Popular: [
-      { frontImage: dresstwofirstview, backImage: dresstwosecondview, name: 'Sunflower Sundress', popularity: 'demand', price: '$1200' },
-      { frontImage: dressthreefirstview, backImage: dressthreesecondview, name: 'Evening Mesh', popularity: 'demand', price: '$450' },
-      { frontImage: dressonefirstview, backImage: dressonesecondview, name: 'Sapphire Soiree', popularity: 'demand', price: '$590' },
-      { frontImage: dressfourfirstview, backImage: dressfoursecondview, name: 'Elegantte Flowy', popularity: 'demand', price: '$800' },
+      { frontImage: dresstwofirstview, backImage: dresstwosecondview, name: 'Sunflower Sundress', popularity: 'dress', price: '$1200' },
+      { frontImage: dressthreefirstview, backImage: dressthreesecondview, name: 'Evening Mesh', popularity: 'dress', price: '$450' },
+      { frontImage: dressonefirstview, backImage: dressonesecondview, name: 'Sapphire Soiree', popularity: 'dress', price: '$590' },
+      { frontImage: dressfourfirstview, backImage: dressfoursecondview, name: 'Elegantte Flowy', popularity: 'dress', price: '$800' },
     ],
     Seasonal: [
-      { frontImage: seasonalonefirstview, backImage: seasonalonesecondview, name: 'Winter Whisper Sweater', popularity: 'demand', price: '$250' },
-      { frontImage: seasonaltwofirstview, backImage: seasonaltwosecondview, name: 'Fireside Classic Pullover', popularity: 'demand', price: '$170' },
-      { frontImage: seasonalthirdfirstview, backImage: seasonalthirdsecondview, name: 'Weekend Comfort Cardigan', popularity: 'demand', price: '$180' },
-      { frontImage: seasonalfourthfirstview, backImage: seasonalforthsecondview, name: 'Arctic Adventure', popularity: 'demand', price: '$248' },
+      { frontImage: seasonalonefirstview, backImage: seasonalonesecondview, name: 'Winter Whisper Sweater', popularity: 'sweater', price: '$250' },
+      { frontImage: seasonaltwofirstview, backImage: seasonaltwosecondview, name: 'Fireside Classic Pullover', popularity: 'sweater', price: '$170' },
+      { frontImage: seasonalthirdfirstview, backImage: seasonalthirdsecondview, name: 'Weekend Comfort Cardigan', popularity: 'sweater', price: '$180' },
+      { frontImage: seasonalfourthfirstview, backImage: seasonalforthsecondview, name: 'Arctic Adventure', popularity: 'sweater', price: '$248' },
 
     ],
   };
@@ -41,10 +46,15 @@ function ProductMain() {
       ...prevHoveredProducts,
       [category]: productName,
     }));
+
+    setHoveredCard(productName);
+
   };
 
   const handleMouseLeave = () => {
     setHoveredProducts({});
+    setHoveredCard(null);
+
   };
 
   return (
@@ -75,6 +85,17 @@ function ProductMain() {
                     <small>{product.popularity}</small>
                     <p>{product.price}</p>
                   </div>
+
+                  {hoveredCard === product.name && (
+  <div className={styles.ProductIcons}>
+    <small className={styles.ProductWishlist}>
+      <FontAwesomeIcon icon={faHeart} />
+    </small>
+    <small className={styles.ProductCart}>
+      <FontAwesomeIcon icon={faShoppingCart} />
+    </small>
+  </div>
+)}
                 </div>
               ))}
             </div>

@@ -23,8 +23,6 @@
 
   }
 
-
-
   .CategoriesCard {
     position: relative;
     width:350px;
@@ -60,13 +58,7 @@
     margin: 0;
   }
 
-
-
-
-
-
   @media(max-width:768px){
-
     .CategoriesRow{
      flex-basis: calc(50%  - 10px);
      align-items: center;
