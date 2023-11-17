@@ -17,13 +17,15 @@ import seasonalfourthfirstview from '../../../assets/images/products/seasonal/se
 import seasonalforthsecondview from '../../../assets/images/products/seasonal/seasonalfourthsecondview.png';
 import styles from '../../../assets/styles/components/products/Overview.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
+
+
+
 
 function ProductMain() {
   const [hoveredProducts, setHoveredProducts] = useState({});
   const [hoveredCard, setHoveredCard] = useState(null);
-
-
 
   const products = {
     Popular: [

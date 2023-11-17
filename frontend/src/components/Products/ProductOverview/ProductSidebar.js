@@ -4,7 +4,6 @@ import shoes2 from '../../../assets/images/products/shoes/shoes2.png'
 import shoes3 from '../../../assets/images/products/shoes/shoes3.png'
 import shoes4 from '../../../assets/images/products/shoes/shoes4.png'
 import shoes5 from '../../../assets/images/products/shoes/shoes5.png'
-
 import styles from '../../../assets/styles/components/products/Overview.module.css'
 
 

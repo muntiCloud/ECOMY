@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../../assets/styles/components/products/Categories.module.css'
-
 import shoes from '../../assets/images/products/categories/shoes.png'
 import men from '../../assets/images/products/categories/men.png'
 import skincare from '../../assets/images/products/categories/skincare.png'

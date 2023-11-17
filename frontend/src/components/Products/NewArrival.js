@@ -1,7 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-
+import { faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import styles from '../../assets/styles/components/products/NewArrival.module.css'
 import handbag1 from '../../assets/images/products/bags/handbag1.png'
 import handbag2 from '../../assets/images/products/bags/handbag2.png'
@@ -11,7 +10,6 @@ import handbag5 from '../../assets/images/products/bags/handbag5.png'
 
 
 function NewArrival(){
-
     const products = [
       { id: 1, image: handbag1, type: 'Professional Carryall', name: 'Leather Work Essential', price: '$79.99' },
       { id: 2, image: handbag2, type: 'Casual Companion', name: 'Canvas Everyday Bag', price: '$89.99' },

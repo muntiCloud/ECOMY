@@ -1,14 +1,13 @@
-import React, {useState, useEffect} from 'react'
-
+import React, {useState} from 'react'
 import styles from '../../assets/styles/Nav/Nav.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-
 import Hamburger from './Humbergur';
+
+
 function Nav (){
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
     };
