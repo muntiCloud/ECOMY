@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-
 import styles from '../../assets/styles/Nav/Highlight.module.css'
 
 

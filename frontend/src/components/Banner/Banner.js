@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react'
-
 import styles from '../../assets/styles/components/Banner.module.css'
-
 import banner1 from '../../assets/images/banner/banner1.png'
 import banner2 from '../../assets/images/banner/banner2.png'
 

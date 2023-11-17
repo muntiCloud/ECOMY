@@ -1,7 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-
+import { faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import styles from '../../assets/styles/components/products/Featured.module.scss'
 import lancomeProduct1 from '../../assets/images/products/featured/lancomeProduct1.png'
 import lancomeProduct2 from '../../assets/images/products/featured/lancomeProduct2.png'
