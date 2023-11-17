@@ -138,7 +138,6 @@ margin-left:2%;
   .MainProductWrapper {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
   }
 
   .MainProductCard {
@@ -150,17 +149,9 @@ margin-left:2%;
 }
 
 
-
-
-
-
-
   .MainProductWrapper {
     display: flex;
-    /* justify-content: space-evenly; */
   }
-
-
 
 
 .MainProductCard {
@@ -181,7 +172,6 @@ margin-left:2%;
     position: absolute;
     width: 100%;
     height: 400px;
-    /* object-fit: cover; */
   }
 
 
@@ -212,4 +202,27 @@ margin-left:2%;
     font-size: 1rem;
     font-weight: bold;
     color: #27ae60;
+  }
+
+
+  /*ICONS*/
+  .ProductIcons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .ProductWishlist,
+  .ProductCart {
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+.ProductWishlist:hover, .ProductCart:hover{
+    background-color:purple;
+    color:white;
+    padding:10px;
   }

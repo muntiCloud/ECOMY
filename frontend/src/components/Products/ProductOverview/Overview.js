@@ -8,22 +8,11 @@ function Overview (){
 
 return(
 
-    <>
+<>
  < div className={styles.OverviewContainer}>
-     {/* <div className={styles.OverviewRow} >
-    <div className={styles.Sidebar}> */}
       < ProductSidebar />
-     {/* </div>
-    <div className={styles.MainProductOverview}> */}
       < ProductMain />
-    {/* </div>
-
-
-    </div> */}
     </div>
-
-
-
     </>
    )
 

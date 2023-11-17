@@ -9,9 +9,6 @@ import Ads from '../../components/Ads/Spotlight';
 import Categories from '../../components/Categories/Categories';
 import FeaturedProduct from '../../components/Featured/FeaturedProduct';
 import Footer from '../../components/Footer/Footer';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { faIconName } from '@fortawesome/free-solid-svg-icons';
 
 
 function Main (){
