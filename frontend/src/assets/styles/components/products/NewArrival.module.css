@@ -1,0 +1,100 @@
+.ProductArrivalRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .ProductCard {
+    width: calc(20% - 20px);
+    box-sizing:border-box;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+  }
+
+  .ProductWrapper{
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+  }
+  .ProductImage {
+  position: absolute;
+   width: 100%;
+  height: 300px;
+  object-fit:cover ;
+  }
+
+  .ProductContent {
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    width:100%;
+    height: 150px;
+    padding:10px;
+    box-sizing: border-box;
+  }
+
+ .ProductContent  .ProductTypeText {
+    color: purple;
+    text-transform: uppercase;
+  }
+  .ProductNameText{
+    text-transform: capitalize ;
+    color:rgb(76, 62, 62);
+  }
+
+ .ProductPrice{
+    font-size:1.2rem;
+  margin-left:10px;
+  }
+
+  .ProductIcons {
+   position: absolute;
+   display:flex;
+   top: 0;
+   right:0;
+   right:0;
+   background-color:rgb(237, 237, 237);
+   opacity:0;
+   transition: opacity 0.3s ease;
+   width:100%;
+   font-size:1.2rem;
+
+  }
+
+.ProductCard:hover .ProductIcons {
+  opacity: 1;
+
+}
+
+  .ProductWishlist,
+  .ProductCart {
+    padding:10px;
+  }
+
+
+
+  @media(max-width: 1500px){
+    .ProductCard{
+      width:calc(25% - 20px)
+
+    }
+}
+
+
+  @media(max-width: 1200px){
+    .ProductCard{
+      width:calc(33.33% - 20px)
+
+    }
+}
+
+@media(max-width: 992px){
+  .ProductCard{
+    width:calc(50% - 20px)
+
+  }
+}
+
+

@@ -1,0 +1,132 @@
+.FooterContainer {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    color:black;
+  }
+
+  .FooterRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+
+  }
+.FooterListItem{
+    margin:18px;
+}
+  .FooterSection {
+    flex: 1;
+    height: 100%;
+  }
+
+  .FooterList, .FooterListItem{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+text-decoration: none;
+color: black;
+
+}
+
+
+  .SignUpForm {
+    flex: 1;
+    margin-top: 20px;
+    width: 300px;
+    height: 100%;
+    margin-bottom: 5%;
+    margin-left:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .SignUpForm h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .SignUpForm form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .SignUpForm label {
+    margin-bottom: 5px;
+  }
+
+  .SignUpForm input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .SignUpForm button {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .SocialMediaIcons {
+    margin-bottom: 7%;
+    margin-left:30%;
+    /* flex: 1; */
+    /* margin-top: 20px; */
+    /* height: 100%; Fill the available height */
+  }
+
+  .SocialIcon {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #333;
+  }
+
+
+
+
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .FooterContainer {
+      width: 100%;
+      height: auto;
+    }
+
+    .FooterRow {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .FooterSection,
+    .SignUpForm,
+    .SocialMediaIcons {
+      width: 100%;
+      margin: 0;
+    }
+
+    .SignUpForm {
+      width: 100%;
+    }
+    .SocialIcon {
+    margin-top:20px;
+    }
+  }
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+.FeaturedContainer {
+    margin: 20px 0;
+  }
+
+  .FeaturedRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .FeaturedProductCard {
+    width: 250px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    height:500px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .ProductWrapper {
+    position: relative;
+  }
+
+  .FeaturedProductImage {
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .FeaturedProductContent {
+    padding: 10px;
+    height:150px;
+    // background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .FeaturedProductTypeText {
+    margin: 0;
+    color: #888;
+    font-size: 0.8rem;
+  }
+
+  .FeaturedProductTitle {
+    margin: 5px 0;
+    font-size: 1.2rem;
+  }
+
+  .FeaturedPrice {
+    margin: 0;
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .ProductIcons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+  }
+
+  .ProductWishlist,
+  .ProductCart {
+    background-color: #fff;
+    color: #e74c3c;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+  }

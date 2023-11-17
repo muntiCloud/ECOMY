@@ -1,0 +1,22 @@
+.ecomm-container {
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    padding:5px;
+
+
+  }
+
+  .ecomm-highlighter {
+    position: absolute;
+  }
+
+  .highlighted-text{
+    color: white;
+    text-align: center;
+  }

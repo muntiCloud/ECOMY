@@ -1,0 +1,91 @@
+.SpotlightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.SpotlightRow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.SpotlightLeftContent img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.SpotlightRightContent {
+  flex-grow: 1;
+}
+
+.SpotlightContent {
+  text-align: center; 
+
+}
+
+@media (min-width: 768px) {
+  .SpotlightContainer {
+    width: 70%;
+  }
+
+  .SpotlightRow {
+    flex-direction: row;
+  }
+
+  .SpotlightContent {
+    margin-top: 29%;
+    width: 290px;
+
+  }
+
+  .SpotlightLeftContent {
+    flex: 1;
+    margin-right: 20px;
+
+  }
+
+  .SpotlightRightContent {
+    flex: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+.SpotlightContent h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.SpotlightContent p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.SpotlightContent button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.SpotlightContent button:hover {
+  background-color: #45a049;
+}

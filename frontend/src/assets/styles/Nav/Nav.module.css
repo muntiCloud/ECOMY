@@ -1,0 +1,126 @@
+
+.Header{
+    display:flex;
+    justify-content: space-around;
+}
+
+
+.Logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .Nav {
+      padding:5px;
+  }
+
+  .NavUlWrap {
+      display:flex;
+      padding:0;
+      margin:0;
+
+  }
+
+  .NavList {
+      list-style: none;
+      margin: 20px;
+      cursor:pointer;
+      position: relative;
+      font-size: 1.2rem;
+
+  }
+
+
+  .NavList:hover{
+    color: rgb(164, 103, 164);
+    text-decoration: underline;
+
+  }
+  .NavList:hover .NavNestedUl {
+     display: block;
+   }
+
+  .NavNestedUl {
+    display:none;
+    position: absolute;
+    top:100%;
+    left:0;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    padding:20px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
+    margin-top:15px;
+    width: 110px;
+    z-index: 900;
+  }
+
+
+
+  .NavNestedList {
+    margin-bottom: 8px;
+    list-style:none;
+    text-decoration: underline;
+    color: rgb(66, 65, 65);
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .NavIcon {
+      display:flex;
+
+  }
+
+  .SearchIcon,
+  .UserIcon,
+  .CartIcon {
+margin: 9px;
+font-size:1.4rem;
+  }
+
+
+
+/*responsive styles for small screens */
+@media only screen and (max-width: 768px) {
+  .ResponsiveNav {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+  }
+
+  .ResponsiveNav.active {
+      display: flex;
+  }
+
+  .NavList {
+      margin: 10px 0;
+  }
+
+  .HamburgerMenu {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      margin: 15px;
+  }
+
+  .HamburgerLine {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 5px 0;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .ResponsiveNav {
+
+  }
+}
