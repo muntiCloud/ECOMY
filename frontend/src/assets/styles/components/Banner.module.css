@@ -47,10 +47,23 @@ margin-bottom: 50px;
     @media (max-width: 780px){
 .BannerContainer{
     width:100vw;
+    background-position: right;
+
 
 }
-.BannerContentWrapper{
-    text-align:left;
-}
+    .BannerContentWrapper {
+        text-align: left;
+        left: 5%;
+        width: 90%;
+        color:white;
+        font-weight: 900;
+        width: 340px;
+      }
+      /* .BannerContentWrapper, .AdsHeader, .AdsText, .DiscountText, .ShoppingBtn{
+        text-align: center;
+
+      } */
+
+
 
     }
