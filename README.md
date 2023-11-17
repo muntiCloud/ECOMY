@@ -2,6 +2,9 @@
 
 Welcome to our E-Commerce Web Application! This project is built with React and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Application Design](./frontend/src/assets/images/brand/ecomy.png)
+
+
 ## Getting Started
 
 ### Prerequisites
