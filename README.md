@@ -39,8 +39,6 @@ Now that you have the project set up, you can run the application:
     npm start
     ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application. The page will reload automatically when you make changes.
-
 ## Testing
 
 To run tests, use the following command:
